@@ -13,11 +13,10 @@ This was created by combining previous work done by very smart people.
 This version combines soyasoya5's TorchAPI on Linux Docker and
 Devidian's work on streamlining and updating the old Dockers.
 
-### Improvements from soyasoya5's TorchAPI Docker
+### Changes from soyasoya5's TorchAPI Docker
 ---
  - Wine 9 instead of Wine 6
- - More control over Docker build (Debian slim, instead of maxxxx's old
-Docker image)
+ - More control over Docker build (Debian slim, instead of mmmaxwwwell's Docker image)
  - Automatic Torch startup.
  - VNC access is secured with a password.
 
@@ -33,11 +32,11 @@ Docker image)
 ---
 You should edit the entrypoint.sh file and find this line;
 
-''runuser -u wine -- bash -c 'x11vnc -display WAIT:99 -forever
+'runuser -u wine -- bash -c 'x11vnc -display WAIT:99 -forever
 -autoport 5900 -auth /app/.Xauthority -passwd mypassword -o
-/app/x11vnc.log -bg &''
+/app/x11vnc.log -bg &'
 
-Change the -passwd mypassword to a password that you wish to use
+Change -passwd 'mypassword' to a password that you wish to use
 instead.  This should be done BEFORE you build the docker, as this
 file will be built into the docker image and cannot be changed later.
 
