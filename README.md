@@ -77,7 +77,7 @@ So, this docker will work without requiring downloading of Torch at
 the moment.
 - This works on headless servers, as you can interface it through SSH
 alone.
-- Attach a CLI session to the Docker by running this command: `docker exec -it se-torchapi /bin/bash`
+- Attach a terminal session into the Dockers Debian space by running this command: `docker exec -it torchapi /bin/bash`
 
 ## Credits & Acknowledgements
 ---
