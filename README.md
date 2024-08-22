@@ -65,9 +65,7 @@ that is launched alongside it, for your use to manage files.
 
 3. Run `./stop`
 
-This will kill and unload all docker processes.  You shouldn't
-configure the server until after you have made sure all processes are
-stopped and unloaded from memory.
+This will kill and unload all docker processes.  You shouldn't configure the server files from outside the Docker unless you have made sure all processes are stopped and unloaded from memory.
 
 ## Notes
 ---
