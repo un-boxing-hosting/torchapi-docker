@@ -77,6 +77,7 @@ So, this docker will work without requiring downloading of Torch at
 the moment.
 - This works on headless servers, as you can interface it through SSH
 alone.
+- The window manager does not like it when the programs are closed and restarted.  If you close the server for any reason, you have to restart the docker.  I will try to fix this.
 - Attach a terminal session into the Dockers Debian space by running this command: `docker exec -it torchapi /bin/bash`
 
 ## Credits & Acknowledgements
