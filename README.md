@@ -67,6 +67,14 @@ that is launched alongside it, for your use to manage files.
 
 This will kill and unload all docker processes.  You shouldn't configure the server files from outside the Docker unless you have made sure all processes are stopped and unloaded from memory.
 
+The user that runs Torch/Space Engineers is wine:wine and not root or whatever your user is.  This means you may end up with conflicting owners when you paste in files into the Instance, and may end up with a situation like below ;
+
+![Files not Owned](images/torchapi-owner.png)
+
+You can see that the Dedicated cfg file and Storage is owned by root and not wine.  When Torch runs under wine, it will be unable to edit those because its not the owner.  You can fix this by using the chown recursive command to change the ownership of a directory and all its subdirectories and files;
+
+`chown -R wine:wine .`
+
 ## Notes
 ---
 - As the Torch-API download site appears to be down at the moment, I
