@@ -67,7 +67,7 @@ that is launched alongside it, for your use to manage files.
 
 This will kill and unload all docker processes.  You shouldn't configure the server files from outside the Docker unless you have made sure all processes are stopped and unloaded from memory.
 
-The user that runs Torch/Space Engineers is wine:wine and not root or whatever your user is.  This means you may end up with conflicting owners when you paste in files into the Instance, and may end up with a situation like below ;
+The user that runs Torch/Space Engineers is wine:wine and not root or whatever your user is.  This means you may end up with conflicting owners when you paste in files into the Instance (or another folder), and may end up with a situation like below ;
 
 ![Files not Owned](images/torchapi-owner.png)
 
