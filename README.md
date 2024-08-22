@@ -1,4 +1,4 @@
-## Space Engineers TorchAPI on a Linux Debian Docker with Wine9
+## Space Engineers Torch Server on a Linux Debian Docker with Wine 9
 ---
 
 ![TorchAPI GUI in VNC](images/torchapi-vnc.png) 
