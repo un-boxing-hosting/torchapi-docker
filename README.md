@@ -85,6 +85,7 @@ the moment.
 alone.
 - The window manager does not like it when the programs are closed.  If you close the server for any reason, you have to restart the docker.  Restarting the server actually closes it, and breaks the window manager (but it still restarts).  Also, you can only edit the server configs before you start it, not after.  I will try to fix this.
 - Attach a terminal session into the Dockers Debian space by running this command: `docker exec -it torchapi /bin/bash`
+- If you need to update or change the start/stop scripts, you need to rebuild the docker image with the docker-compose up command including a --build flag.
 
 ## Credits & Acknowledgements
 ---
